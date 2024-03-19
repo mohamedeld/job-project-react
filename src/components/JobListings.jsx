@@ -12,7 +12,7 @@ function JobListings() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* <!-- Job Listing 1 --> */}
             {jobs ? (
-              jobs.map((job) => {
+              jobs.slice(0,3).map((job) => {
                 return <JobListing key={job.id} job={job} />;
               })
             ) : (
