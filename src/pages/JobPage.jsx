@@ -1,10 +1,10 @@
 import JobDetail from "../components/JobDetail"
 
 
-function JobPage() {
+function JobPage({deleteJob}) {
   return (
     <>
-      <JobDetail/>
+      <JobDetail deleteJob={deleteJob}/>
     </>
   )
 }

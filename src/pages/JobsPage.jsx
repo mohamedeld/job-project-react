@@ -1,9 +1,9 @@
 import JobListings from "../components/JobListings"
 
-function JobsPage() {
+function JobsPage({deleteJob}) {
   return (
     <>
-      <JobListings isHome={false}/>
+      <JobListings deleteJob={deleteJob} isHome={false}/>
     </>
   )
 }

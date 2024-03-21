@@ -1,7 +1,7 @@
 import { useState } from "react";
 import {FaMapMarker}  from "react-icons/fa"
 import { Link } from "react-router-dom";
-function JobListing({ job }) {
+function JobListing({ job}) {
   const [showFullDescription,setShowFullDescription] = useState(false);
   let description = job.description;
   if(!showFullDescription){

@@ -1,8 +1,17 @@
 
-import { Link, useLoaderData } from "react-router-dom"
+import { Link, useLoaderData, useNavigate } from "react-router-dom"
 import { FaArrowLeft, FaMapMarker } from "react-icons/fa";
-function JobDetail() {
+function JobDetail({deleteJob}) {
+  const navigate = useNavigate();
   const job = useLoaderData();
+  function handleDeleteJob(jobId){
+    const confirm = window.confirm("Do you want to delete");
+    if(!confirm){
+      return;
+    }
+    deleteJob(jobId);
+    return navigate("/jobs")
+  }
   return (
     <>
      
@@ -85,7 +94,7 @@ function JobDetail() {
                 to={`/jobs/edit/${job.id}`}
                 className="bg-indigo-500 hover:bg-indigo-600 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
                 >Edit Job</Link>
-              <button
+              <button onClick={()=>handleDeleteJob(job.id)}
                 className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
               >
                 Delete Job

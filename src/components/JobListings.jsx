@@ -22,7 +22,7 @@ function JobListings({isHome=true}) {
   useEffect(()=>{
     getJobs();
   },[])
- 
+  
   return (
     <>
       <section className="bg-blue-50 px-4 py-10">
@@ -34,7 +34,7 @@ function JobListings({isHome=true}) {
             {/* <!-- Job Listing 1 --> */}
             {loading === false && jobs ? (
               jobs.map((job) => {
-                return <JobListing key={job.id} job={job} />;
+                return <JobListing  key={job.id} job={job} />;
               })
             ) : (
               <Loading/>
