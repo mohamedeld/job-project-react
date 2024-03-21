@@ -1,5 +1,5 @@
 {
-  "jobs":[
+  "jobs": [
     {
       "id": "1",
       "title": "Senior React Developer",
@@ -83,7 +83,20 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
+    },
+    {
+      "id": "4bd5",
+      "title": "Front End Developer Angular ",
+      "description": "If you want to handle the Enter key press event within an input field, you should attach an event listener to the input field itself, not to the form submission. Then you can check for the Enter key press within that event listener.",
+      "type": "Full-Time",
+      "location": "Cairo",
+      "salary": "Under $50K",
+      "company": {
+        "name": "Fresh graduate from Information Technology Institue ( ITI )",
+        "description": "If you want to handle the Enter key press event within an input field, you should attach an event listener to the input field itself, not to the form submission. Then you can check for the Enter key press within that event listener.",
+        "contactEmail": "mohamedelsayedelrfaay@gmail.com",
+        "contactPhone": "+201099644796"
+      }
     }
   ]
-
 }
